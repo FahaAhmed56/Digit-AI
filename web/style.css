@@ -1,0 +1,26 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { min-height: 100vh; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #0f172a; color: #e2e8f0; padding: 32px 16px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+header { text-align: center; max-width: 560px; }
+h1 { font-size: 2rem; margin-bottom: 6px; }
+header p, footer { color: #94a3b8; font-size: .92rem; }
+footer a { color: #818cf8; }
+main { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.panel { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 18px; }
+#pad { display: block; width: 280px; height: 280px; max-width: 100%; background: #fff; border-radius: 10px; cursor: crosshair; touch-action: none; }
+.row { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+.hint { color: #64748b; font-size: .82rem; }
+button { font: inherit; cursor: pointer; border: none; border-radius: 8px; padding: 9px 18px; background: #6366f1; color: #fff; font-weight: 600; }
+button:hover { background: #4f46e5; }
+.result { width: 300px; display: flex; flex-direction: column; gap: 14px; }
+.big { text-align: center; }
+#guess { font-size: 4.5rem; font-weight: 800; line-height: 1; color: #a5b4fc; }
+#conf { color: #94a3b8; font-size: .9rem; margin-top: 4px; }
+.bar { display: grid; grid-template-columns: 16px 1fr 40px; align-items: center; gap: 8px; font-size: .85rem; margin: 3px 0; }
+.bar em { font-style: normal; color: #94a3b8; text-align: right; font-variant-numeric: tabular-nums; }
+.track { height: 10px; background: #0f172a; border-radius: 99px; overflow: hidden; }
+.fill { height: 100%; width: 0; background: #475569; border-radius: 99px; transition: width .15s; }
+.fill.top { background: #22c55e; }
+.seen { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #334155; padding-top: 12px; }
+.seen small { color: #94a3b8; }
+#preview { width: 96px; height: 96px; image-rendering: pixelated; border-radius: 6px; background: #fff; }
